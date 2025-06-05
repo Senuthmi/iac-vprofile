@@ -1,3 +1,23 @@
+vprobit_rsa
+ 
+# bitbucket.org
+Host bitbucket.org
+  PreferredAuthentications publickey
+  IdentityFile ~/.ssh/vprobit_rsa
+
+# github.com
+Host github.com
+  HostName github.com
+  PreferredAuthentications publickey
+  IdentityFile ~/.ssh/id_rsa  # or your GitHub SSH key
+
+ 
+# bitbucket.org
+Host bitbucket.org
+ PreferredAuthentications publickey
+ IdentityFile ~/.ssh/vprobit_rsa
+
+ 
 
 env:
   AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
